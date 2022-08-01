@@ -3,6 +3,7 @@ import Tmdb from "./components/Tmdb"
 import MovieRow from './components/MovieRow/MovieRow'
 import FeaturedMovie from './components/FeaturedMovie/FeaturedMovie'
 import Header from './components/Header/Header'
+import Loading from './components/LoadingPage/Loading'
 import "./styles/style.css"
 
 const App = () => {
@@ -47,10 +48,8 @@ const App = () => {
           <MovieRow key={key} title={item.title} items={item.items} />
         ))}
       </section>
-      {movieList.length <= 0 && 
-        <div className="loading">
-          <img src="https://c.tenor.com/Rfyx9OkRI38AAAAC/netflix-netflix-startup.gif" alt="Carregando..." />
-        </div>
+      {movieList.length <= 0  && 
+        <Loading />
       }
       <footer>
         <span>Desenvolvido por Bruno Max</span>
