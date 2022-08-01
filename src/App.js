@@ -3,7 +3,6 @@ import Tmdb from "./components/Tmdb"
 import MovieRow from './components/MovieRow/MovieRow'
 import FeaturedMovie from './components/FeaturedMovie/FeaturedMovie'
 import Header from './components/Header/Header'
-import Loading from './components/LoadingPage/Loading'
 import "./styles/style.css"
 
 const App = () => {
@@ -49,7 +48,7 @@ const App = () => {
         ))}
       </section>
       {movieList.length <= 0  && 
-        <Loading />
+        <div id="loader" class="nfLoader"></div>
       }
       <footer>
         <span>Desenvolvido por Bruno Max</span>
