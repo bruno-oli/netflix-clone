@@ -1,0 +1,59 @@
+.movieRow {
+  margin-bottom: 30px;
+}
+.movieRow h2 {
+  margin: 0 0 0 30px;
+}
+.movieRow .movieRow__left, .movieRow .movieRow__right {
+  position: absolute;
+  width: 40px;
+  height: 225px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all ease 0.3s;
+}
+@media (min-width: 760px) {
+  .movieRow .movieRow__left, .movieRow .movieRow__right {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.movieRow .movieRow__left img, .movieRow .movieRow__right img {
+  width: 25px;
+  filter: invert(1);
+}
+.movieRow:hover .movieRow__left, .movieRow:hover .movieRow__right {
+  visibility: visible;
+  opacity: 1;
+}
+.movieRow .movieRow__left {
+  left: 0;
+}
+.movieRow .movieRow__right {
+  right: 0px;
+}
+.movieRow .movieRow__listarea {
+  overflow-x: hidden;
+  padding-left: 30px;
+}
+.movieRow .movieRow__listarea .movieRow__list {
+  transition: all ease 0.3s;
+}
+.movieRow .movieRow__listarea .movieRow__list .movieRow__item {
+  cursor: pointer;
+  display: inline-block;
+  width: 150px;
+}
+.movieRow .movieRow__listarea .movieRow__list .movieRow__item img {
+  width: 100%;
+  transform: scale(0.9);
+  transition: all ease 0.3s;
+}
+.movieRow .movieRow__listarea .movieRow__list .movieRow__item img:hover {
+  transform: scale(1);
+}/*# sourceMappingURL=MovieRow.css.map */
