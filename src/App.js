@@ -49,7 +49,7 @@ const App = () => {
       </section>
       {movieList.length <= 0 && 
         <div className="loading">
-          <img src="https://c.tenor.com/Rfyx9OkRI38AAAAC/netflix-netflix-startup.gif" alt="Carregando.." />
+          <img src="https://c.tenor.com/Rfyx9OkRI38AAAAC/netflix-netflix-startup.gif" alt="Carregando..." />
         </div>
       }
       <footer>
